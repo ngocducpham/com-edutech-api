@@ -25,7 +25,6 @@ import java.util.TimeZone;
 @EnableScheduling
 @EnableAspectJAutoProxy
 @Slf4j
-@ComponentScan(value = {"com.edutech.api"})
 public class Application {
 
 	@Autowired
