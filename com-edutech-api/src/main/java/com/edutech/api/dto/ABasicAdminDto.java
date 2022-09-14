@@ -1,0 +1,30 @@
+package com.edutech.api.dto;
+
+//import io.swagger.annotations.ApiModelProperty;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
+
+import java.time.LocalDateTime;
+import java.util.Date;
+
+@Data
+public class ABasicAdminDto {
+    @Schema(name = "id")
+    private Long id;
+
+    @Schema(name = "status")
+    private Integer status;
+
+    @Schema(name = "modifiedDate")
+    private Date modifiedDate;
+
+    @Schema(name = "createdDate")
+    private Date createdDate;
+
+    @Schema(name = "modifiedBy")
+    private String modifiedBy;
+
+    @Schema(name = "createdBy")
+    private String createdBy;
+}
